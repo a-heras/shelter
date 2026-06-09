@@ -1,6 +1,20 @@
 :root {
+
+    --color-primary: #f1cdb3;
+    --color-primary-light: #fddcc4;
+    --color-dark: #545454;
+    --color-dark-lighter: #4c4c4c;
+    --color-dark-muted: #b2b2b2;
+    --color-dark-disabled: #cdcdcd;
+    --color-heading-dark: #292929;
+    --color-white: #fafafa;
+    --color-background: #f6f6f6;
+    
+
     --font-family-primary: "Georgia", serif;
     --font-family-secondary: "Arial", sans-serif;
     
     --layout-max-width: 1280px;
+
+    --transition-base: 0.3s ease;
 }

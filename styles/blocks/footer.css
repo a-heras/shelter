@@ -1,0 +1,80 @@
+.footer {
+    min-height: 350px;
+    padding: 40px 0 0;
+    background: url("../../assets/images/footer-gradient-background.png") center top / cover no-repeat;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 310px;
+}
+
+.footer__contacts,
+.footer__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
+
+.footer__contacts {
+    width: 278px;
+    min-height: 234px;
+}
+
+.footer__location {
+    width: 302px;
+    min-height: 234px;
+}
+
+.footer__title {
+    color: var(--color-white);
+}
+
+.footer__link {
+    display: flex;
+    align-items: flex-start;
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+    transition: color var(--transition-base);
+}
+
+.footer__link:hover {
+    color: var(--color-white);
+}
+
+.footer__icon {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.footer__icon_email {
+    width: 40px;
+    height: 32px;
+}
+
+.footer__icon_phone {
+    width: 40px;
+    height: 32px;
+}
+  
+.footer__icon_marker {
+    width: 22px;
+    height: 32px;
+}
+  
+.footer__image {
+    align-self: flex-end;
+}
+  
+.footer__image img {
+    width: 300px;
+    height: 310px;
+    object-fit: contain;
+}

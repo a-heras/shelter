@@ -1,0 +1,82 @@
+.our-friends {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+.our-friends__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-friends__title {
+    width: 400px;
+    text-align: center;
+}
+
+.our-friends--page .our-friends__title {
+    margin: 0 auto;
+}
+
+.our-friends .slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 60px 0;
+}
+
+.slider__button {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--color-background);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color var(--transition-base), border-color var(--transition-base);
+}
+
+.slider__button--prev {
+    border: 2px solid var(--color-dark-disabled);
+    background-image: url("../../assets/icons/left-arrow.svg");
+    cursor: default;
+    pointer-events: none;
+}
+  
+.slider__button--next {
+    border: 2px solid var(--color-primary);
+    background-image: url("../../assets/icons/right-arrow.svg");
+}
+  
+.slider__button--next:hover {
+    background-color: var(--color-primary);
+}
+  
+.slider__track {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    margin: 0 53px;
+}
+
+.our-friends__button {
+    width: 261px;
+    padding: 0;
+}
+
+.our-friends__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    min-height: 930px;
+    margin: 45px 0;
+    padding: 15px 0;
+}
+
+.our-friends--page {
+    padding-bottom: 100px;
+}
+  

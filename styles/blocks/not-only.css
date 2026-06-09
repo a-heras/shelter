@@ -1,0 +1,44 @@
+.not-only {
+    min-height: 908px;
+    background: url("../../assets/images/not-only-screen-bg.png") center top / cover no-repeat;
+}
+
+.not-only__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 908px;
+    padding-top: 180px;
+}
+.not-only__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 460px;
+    min-height: 322px;
+    margin-top: 163px;
+  }
+.not-only__title {
+    max-width: 310px;
+    font-family: var(--font-family-primary);
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 1.3;
+    color: var(--color-white);
+}
+
+.not-only__text {
+    max-width: 460px;
+    color: var(--color-dark-disabled);
+}
+
+.not-only__button {
+    width: 207px;
+    padding: 0;
+}
+
+.not-only__image {
+    width: auto;
+    max-height: 728px;
+    margin-top: 0;
+}

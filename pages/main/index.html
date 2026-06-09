@@ -17,16 +17,16 @@
         />
         <link rel="stylesheet" href="../../styles/main.css" />
     </head>
-    <body class="main-page">
-        <header class="header">
-            <div class="header__container">
-                <a href="#" class="header__logo"
-                    class="header__logo-icon"
-                    src="../../assets/icons/logo.svg"
-                    alt="logo"
-                    width="60"
-                    height="30"
-                >
+    <body class="page page--main">
+        <header class="header header--main">
+            <div class="container header__container">
+                <a href="./index.html" class="header__logo">
+                    <img class="header__logo-icon"
+                        src="../../assets/icons/logo.svg"
+                        alt=""
+                        width="59"
+                        height="33"
+                    />
                     <div class="header__logo-text">
                         <p class="header__logo-title">Cozy House</p>
                         <p class="header__logo-subtitle">Shelter for pets in Boston</p>
@@ -35,7 +35,7 @@
                 <nav class="header__nav" aria-label="Main navigation">
                     <ul class="header__list">
                         <li class="header__item">
-                            <span class="header__link header__link_active" aria-current="page">About the shelter</span>
+                            <span class="header__link header__link--active" aria-current="page">About the shelter</span>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="../our-pets/index.html">Our pets</a>
@@ -61,13 +61,13 @@
                             We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or
                                 she will love you more than anybody else in the world, you will see!
                         </p>
-                        <a href="#pets" class="button not-only__button button_primary">Make a friend</a>
-                        <img
-                            class="not-only__image"
-                            src="../../assets/images/not-only-puppy.png"
-                            alt="Not only people need a house"
-                        >
+                        <a href="#our-friends" class="button not-only__button button--primary">Make a friend</a>
                     </div>
+                    <img
+                        class="not-only__image"
+                        src="../../assets/images/not-only-puppy.png"
+                        alt="Puppy"
+                    >
                 </div>
             </section>
             <section class="about" id="about">
@@ -80,7 +80,7 @@
                         height="408"
                     >
                     <div class="about__content">
-                        <h2 class="about__title section-title">About the shelter “Cozy House”</h2>
+                        <h2 class="about__title">About the shelter “Cozy House”</h2>
                         <p class="about__text">
                             Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them
                             will find a family. The others will continue to live with us and will be waiting for a lucky
@@ -95,16 +95,17 @@
                     </div>
                 </div>
             </section>
-            <section class="our-friends" id="our-friends">
+        <section class="our-friends" id="our-friends">
                 <div class="container our-friends__container">
-                    <h2 class="our-friends__title section-title">Our friends who<br />are looking for a house</h2>
-                    <div class="our-friends__slider slider">
+                    <h2 class="our-friends__title">Our friends who<br />are looking for a house</h2>
+                    <div class="slider">
                         <button
-                            class="slider__button slider__button_prev"
+                            class="slider__button slider__button--prev"
                             type="button"
                             disabled
                             aria-label="Previous slide"
                         ></button>
+
                         <div class="slider__track">
                             <article class="card">
                                 <img
@@ -115,7 +116,7 @@
                                     height="270"
                                 />
                                 <h3 class="card__title">Katrine</h3>
-                                <button class="card__button button button_secondary" type="button">Learn more</button>
+                                <button class="card__button button button--secondary" type="button">Learn more</button>
                             </article>
               
                             <article class="card">
@@ -127,7 +128,7 @@
                                 height="270"
                               />
                               <h3 class="card__title">Jennifer</h3>
-                              <button class="card__button button button_secondary" type="button">Learn more</button>
+                              <button class="card__button button button--secondary" type="button">Learn more</button>
                             </article>
               
                             <article class="card">
@@ -139,18 +140,18 @@
                                 height="270"
                               />
                               <h3 class="card__title">Woody</h3>
-                              <button class="card__button button button_secondary" type="button">Learn more</button>
+                              <button class="card__button button button--secondary" type="button">Learn more</button>
                             </article>
-
-                            <button class="slider__button slider__button_next" type="button" aria-label="Next slide"></button>
-                            <a class="our-friends__button button button_secondary" href="../our-pets/index.html">Get to know the rest</a>
                           </div>
+
+                          <button class="slider__button slider__button--next" type="button" aria-label="Next slide"></button>
                     </div>
+                    <a class="our-friends__button button button--primary" href="../our-pets/index.html">Get to know the rest</a>
                 </div>
             </section>
             <section class="help" id="help">
                 <div class="container help__container">
-                    <h2 class="help__title section-title">How you can help<br />our shelter</h2>
+                    <h2 class="help__title">How you can help<br />our shelter</h2>
                     <ul class="help__list">
                         <li class="help__item">
                             <img class="help__icon"
@@ -247,26 +248,26 @@
             <section class="in-addition" id="in-addition">
                 <div class="container in-addition__container">
                     <img
-                        class="donation__image"
+                        class="in-addition__image"
                         src="../../assets/images/donation-dog.png"
                         alt="Puppy"
                         width="505"
                         height="282"
                     />
-                    <div class="donation__content">
-                        <h2 class="donation__title section-title">You can also make a&nbsp;donation</h2>
-                        <h3 class="donation__subtitle">Name of the bank / Type of bank account</h3>
-                        <a class="donation__credit-card" href="#">
-                            <span class="donation__credit-card-number">8380 2880 8028 8791 7435</span>
+                    <div class="in-addition__content">
+                        <h2 class="in-addition__title">You can also make a&nbsp;donation</h2>
+                        <h3 class="in-addition__subtitle">Name of the bank / Type of bank account</h3>
+                        <a class="in-addition__credit-card" href="#">
+                            <span class="in-addition__credit-card-number">8380 2880 8028 8791 7435</span>
                             <img
-                                class="donation__credit-card-icon"
+                                class="in-addition__credit-card-icon"
                                 src="../../assets/icons/credit-card.svg"
                                 alt=""
                                 width="30"
                                 height="23"
                             />
                         </a>
-                        <p class="donation__text">
+                        <p class="in-addition__text">
                             Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
                             at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
                             Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -279,10 +280,10 @@
         <footer class="footer" id="contacts">
             <div class="container footer__container">
                 <div class="footer__contacts">
-                    <h2 class="footer__title section-title">For questions and suggestions</h2>
+                    <h2 class="footer__title">For questions and suggestions</h2>
                     <a class="footer__link" href="mailto:email@shelter.com">
                         <img
-                        class="footer__icon footer__icon_email"
+                        class="footer__icon footer__icon--email"
                         src="../../assets/icons/icon-email.svg"
                         alt=""
                         width="40"
@@ -292,17 +293,17 @@
                     </a>
                     <a class="footer__link" href="tel:+136745677554">
                         <img
-                        class="footer__icon footer__icon_phone"
+                        class="footer__icon footer__icon--phone"
                         src="../../assets/icons/icon-phone.svg"
                         alt=""
-                        width="22"
+                        width="40"
                         height="32"
                         />
                         <span>+13 674 567 75 54</span>
                     </a>
                 </div>
                 <div class="footer__location">
-                    <h2 class="footer__title section-title">We are waiting for your visit</h2>
+                    <h2 class="footer__title">We are waiting for your visit</h2>
                     <a
                         class="footer__link"
                         href="https://www.google.com/maps/"
@@ -310,7 +311,7 @@
                         rel="noopener noreferrer"
                     >
                     <img
-                        class="footer__icon footer__icon_marker"
+                        class="footer__icon footer__icon--marker"
                         src="../../assets/icons/pin.svg"
                         alt=""
                         width="22"
@@ -325,7 +326,7 @@
                         rel="noopener noreferrer"
                     >
                     <img
-                        class="footer__icon footer__icon_marker"
+                        class="footer__icon footer__icon--marker"
                         src="../../assets/icons/pin.svg"
                         alt=""
                         width="22"

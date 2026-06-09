@@ -1,0 +1,68 @@
+.in-addition {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+.in-addition__container {
+    display: flex;
+    justify-content: space-between;
+    width: 915px;
+    margin: 0 auto;
+}
+
+.in-addition__image {
+    align-self: center;
+    width: 505px;
+    height: 261px;
+    object-fit: contain;
+}
+
+.in-addition__content {
+    width: 380px;
+}
+
+.in-addition__subtitle {
+    margin: 20px 0;
+    font-family: var(--font-family-primary);
+    font-size: 15px;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    color: var(--color-dark);
+}
+
+.in-addition__credit-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 349px;
+    height: 43px;
+    padding: 10px 15px;
+    border-radius: 9px;
+    background-color: var(--color-primary);
+    transition: background-color var(--transition-base);
+}
+
+.in-addition__credit-card:hover {
+    background-color: var(--color-primary-light);
+}
+
+.in-addition__credit-card-number {
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    color: var(--color-dark);
+}
+
+.in-addition__credit-card-icon {
+    width: 30px;
+    height: 23px;
+}
+  
+.in-addition__text {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+    color: var(--color-dark-muted);
+}
