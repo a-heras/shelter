@@ -1,0 +1,6 @@
+:root {
+    --font-family-primary: "Georgia", serif;
+    --font-family-secondary: "Arial", sans-serif;
+    
+    --layout-max-width: 1280px;
+}
