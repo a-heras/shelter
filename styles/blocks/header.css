@@ -31,7 +31,6 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 45px;
-    color: var(--color-dark);
 }
 
 .header--our-friends .header__logo:hover .header__logo-title,

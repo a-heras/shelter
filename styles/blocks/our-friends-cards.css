@@ -1,0 +1,14 @@
+.our-friends__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    min-height: 930px;
+    margin: 45px 0;
+    padding: 15px 0;
+}
+
+.our-friends--page {
+    padding-bottom: 100px;
+}

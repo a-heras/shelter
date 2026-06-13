@@ -54,17 +54,17 @@
     margin-right: 20px;
 }
 
-.footer__icon_email {
+.footer__icon--email {
     width: 40px;
     height: 32px;
 }
 
-.footer__icon_phone {
+.footer__icon--phone {
     width: 40px;
     height: 32px;
 }
   
-.footer__icon_marker {
+.footer__icon--marker {
     width: 22px;
     height: 32px;
 }
