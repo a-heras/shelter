@@ -1,28 +1,39 @@
 .help {
-    padding: 80px 0;
+    padding: 100px 0;
     background-color: var(--color-white);
 }
 
+.help__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
 .help__title {
-    margin-bottom: 60px;
+    max-width: 315px;
+    margin: 0;
     text-align: center;
+    padding-left: 2px;
 }
 
 .help__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 55px 119px;
+    column-gap: 119px;
+    row-gap: 55px;
     max-width: 1026px;
-    margin: 0 auto;
+    min-height: 281px;
 }
 
 .help__item {
+    height: 113px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 113px;
 }
 
 .help__icon {
@@ -31,6 +42,7 @@
 }
 
 .help__name {
+    margin: 0;
     font-family: var(--font-family-primary);
     font-size: 20px;
     line-height: 1.15;

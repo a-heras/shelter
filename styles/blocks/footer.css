@@ -21,7 +21,7 @@
 }
 
 .footer__contacts {
-    width: 278px;
+    width: 279px;
     min-height: 234px;
 }
 
@@ -36,13 +36,13 @@
 
 .footer__link {
     display: flex;
-    align-items: flex-start;
     font-family: var(--font-family-primary);
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.06em;
     color: var(--color-primary);
     transition: color var(--transition-base);
+    align-items: center;
 }
 
 .footer__link:hover {

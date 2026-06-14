@@ -1,4 +1,5 @@
 .not-only {
+    padding-top: 30px;
     min-height: 908px;
     background: url("../../assets/images/not-only-screen-bg.png") center top / cover no-repeat;
 }
@@ -7,17 +8,17 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 908px;
-    padding-top: 180px;
+    padding-top: 90px;
 }
+
 .not-only__content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
     width: 460px;
-    min-height: 322px;
     margin-top: 163px;
-  }
+    gap: 42px;
+}
+
 .not-only__title {
     max-width: 310px;
     font-family: var(--font-family-primary);
@@ -28,6 +29,8 @@
 }
 
 .not-only__text {
+    font-size: 15px;
+    line-height: 1.6;
     max-width: 460px;
     color: var(--color-dark-disabled);
 }
@@ -40,5 +43,4 @@
 .not-only__image {
     width: auto;
     max-height: 728px;
-    margin-top: 0;
 }

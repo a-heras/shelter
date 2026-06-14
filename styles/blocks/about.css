@@ -1,13 +1,13 @@
 .about {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 100px;
     background-color: var(--color-white);
 }
 
 .about__container {
     display: flex;
     gap: 120px;
-    align-items: center;
-    padding: 0 175px;
+    justify-content: center;
 }
 
 .about__image {
@@ -17,12 +17,14 @@
 }
 
 .about__content {
+    font-size: 15px;
+    line-height: 1.6;
     width: 430px;
+    margin-top: 14px;
 }
 
 .about__title {
     width: 370px;
-    margin-top: 14px;
 }
 
 .about__text {
