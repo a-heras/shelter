@@ -10,6 +10,6 @@
 }
 
 .our-friends__title {
-    width: 400px;
+    max-width: 400px;
     text-align: center;
 }

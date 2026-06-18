@@ -51,6 +51,11 @@
                                 </li>
                             </ul>
                         </nav>
+                        <button class="header__burger" type="button" aria-label="Open menu">
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                        </button>
                     </div>
                 </header>
                 <div class="container not-only__container">
@@ -77,8 +82,6 @@
                         class="about__image"
                         src="../../assets/images/about-pets.png"
                         alt="Cat and Dog"
-                        width="300"
-                        height="408"
                     >
                     <div class="about__content">
                         <h2 class="about__title">About the shelter “Cozy House”</h2>
@@ -100,13 +103,6 @@
                 <div class="container our-friends__container">
                     <h2 class="our-friends__title">Our friends who<br />are looking for a house</h2>
                     <div class="slider">
-                        <button
-                            class="slider__button slider__button--prev"
-                            type="button"
-                            disabled
-                            aria-label="Previous slide"
-                        ></button>
-
                         <div class="slider__track">
                             <article class="card">
                                 <img
@@ -145,7 +141,10 @@
                             </article>
                           </div>
 
-                          <button class="slider__button slider__button--next" type="button" aria-label="Next slide"></button>
+                        <div class="slider__controls">
+                            <button class="slider__button slider__button--prev" type="button" disabled aria-label="Previous slide"></button>
+                            <button class="slider__button slider__button--next" type="button" aria-label="Next slide"></button>
+                        </div>
                     </div>
                     <a class="our-friends__button button button--primary" href="../our-pets/index.html">Get to know the rest</a>
                 </div>
@@ -252,11 +251,9 @@
                         class="in-addition__image"
                         src="../../assets/images/donation-dog.png"
                         alt="Puppy"
-                        width="505"
-                        height="282"
                     />
                     <div class="in-addition__content">
-                        <h2 class="in-addition__title">You can also make a&nbsp;donation</h2>
+                        <h2 class="in-addition__title">You can also make a donation</h2>
                         <h3 class="in-addition__subtitle">Name of the bank / Type of bank account</h3>
                         <a class="in-addition__credit-card" href="#">
                             <span class="in-addition__credit-card-number">8380 2880 8028 8791 7435</span>
@@ -338,7 +335,7 @@
                 </div>
         
                 <div class="footer__image">
-                    <img src="../../assets/images/footer-puppy.png" alt="Puppy" width="300" height="310" />
+                    <img src="../../assets/images/footer-puppy.png" alt="Puppy" />
                 </div>
             </div>
         </footer>

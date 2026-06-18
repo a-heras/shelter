@@ -6,6 +6,33 @@
     margin: 60px 0;
 }
 
+.slider__controls {
+    display: contents;
+}
+
+.slider__button--prev {
+    order: -1;
+    border: 2px solid var(--color-dark-disabled);
+    background-image: url("../../assets/icons/left-arrow.svg");
+    cursor: default;
+    pointer-events: none;
+}
+
+.slider__track {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    gap: 53px;
+    margin: 0 12px;
+    overflow: hidden;
+}
+
+.slider__button--next {
+    order: 1;
+    border: 2px solid var(--color-primary);
+    background-image: url("../../assets/icons/right-arrow.svg");
+}
+
 .slider__button {
     flex-shrink: 0;
     width: 52px;
@@ -16,31 +43,52 @@
     background-position: center;
     transition: background-color var(--transition-base), border-color var(--transition-base);
 }
-
-.slider__button--prev {
-    border: 2px solid var(--color-dark-disabled);
-    background-image: url("../../assets/icons/left-arrow.svg");
-    cursor: default;
-    pointer-events: none;
-}
-  
-.slider__button--next {
-    border: 2px solid var(--color-primary);
-    background-image: url("../../assets/icons/right-arrow.svg");
-}
   
 .slider__button--next:hover {
     background-color: var(--color-primary);
 }
-  
-.slider__track {
-    display: flex;
-    justify-content: space-between;
-    width: 990px;
-    margin: 0 53px;
+
+.slider__track .card {
+    flex-shrink: 0;
 }
 
 .our-friends__button {
     width: 261px;
     padding: 0;
+}
+
+@media (max-width: 860px) {
+    .slider__track {
+        max-width: 580px;
+        gap: 40px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 750px) {
+    .our-friends .slider {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 42px 0;
+    }
+
+    .slider__controls {
+        display: flex;
+        gap: 80px;
+    }
+
+    .slider__track {
+        max-width: 270px;
+        margin: 0;
+        gap: 0;
+    }
+
+    .our-friends__title {
+        font-size: 25px;
+    }
+
+    .our-friends {
+        padding: 42px 0;
+    }
 }

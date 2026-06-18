@@ -1,7 +1,8 @@
 .pagination {
     display: flex;
-    justify-content: space-between;
-    width: 340px;
+    justify-content: center;
+    gap: 40px;
+    width: calc(52px * 5 + 40px * 4);
     margin: 0 auto;
 }
 
@@ -53,4 +54,18 @@
     border-color: var(--color-dark-disabled);
     cursor: default;
     pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .pagination {
+        gap: 20px;
+        width: calc(52px * 5 + 20px * 4);
+    }
+}
+
+@media (max-width: 320px) {
+    .pagination {
+        gap: 10px;
+        width: calc(52px * 5 + 10px * 4);
+    }
 }
