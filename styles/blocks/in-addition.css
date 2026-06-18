@@ -85,14 +85,6 @@
     .in-addition__image {
         margin-top: 60px;
     }
-
-    .in-addition__credit-card {
-        margin: 0 14px;
-    }
-
-    .in-addition__credit-card-number {
-        font-size: 15px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -118,6 +110,10 @@
 
     .in-addition__credit-card {
         margin: 25px 20px 20px;
+    }
+
+    .in-addition__credit-card-number {
+        font-size: 15px;
     }
 
     .in-addition__text {

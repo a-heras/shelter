@@ -54,11 +54,7 @@
     margin-right: 20px;
 }
 
-.footer__icon--email {
-    width: 40px;
-    height: 32px;
-}
-
+.footer__icon--email,
 .footer__icon--phone {
     width: 40px;
     height: 32px;
@@ -82,18 +78,27 @@
 
     .footer {
         padding-top: 15px;
+        min-height: auto;
     }
 
     .footer__container {
         flex-wrap: wrap;
         justify-content: center;
         gap: 60px;
+        min-height: auto;
     }
 
     .footer__contacts,
     .footer__location {
         margin-bottom: 5px;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .footer__image {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
     }
 }
 
@@ -120,6 +125,22 @@
 
     .footer__image img {
         width: 260px;
-        margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__contacts {
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .footer__location {
+        margin-top: 23px;
+        margin-bottom: 0;
+    }
+
+    .footer__image {
+        margin-top: 24px;
     }
 }
