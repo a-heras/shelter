@@ -86,17 +86,19 @@ img {
     background-color: var(--color-primary);
 }
 
-.button--primary:hover {
-    background-color: var(--color-primary-light);
-}
-
 .button--secondary {
     border: 2px solid var(--color-primary);
     background-color: transparent;
 }
-  
-.button--secondary:hover {
-    background-color: var(--color-primary);
+
+@media (hover: hover) and (pointer: fine) {
+    .button--primary:hover {
+        background-color: var(--color-primary-light);
+    }
+
+    .button--secondary:hover {
+        background-color: var(--color-primary);
+    }
 }
 
 .container {
@@ -149,9 +151,11 @@ img {
     box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
-.card:hover .card__button {
-    background-color: var(--color-primary-light);
-    border-color: transparent;
+@media (hover: hover) and (pointer: fine) {
+    .card:hover .card__button {
+        background-color: var(--color-primary-light);
+        border-color: transparent;
+    }
 }
 
 .card__image {
