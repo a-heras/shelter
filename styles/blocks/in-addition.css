@@ -90,7 +90,7 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .in-addition {
         padding: 42px 0;
     }
@@ -112,7 +112,8 @@
     }
 
     .in-addition__credit-card {
-        margin: 25px 20px 20px;
+        width: 280px;
+        margin: 25px auto 20px;
     }
 
     .in-addition__credit-card-number {
