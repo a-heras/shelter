@@ -29,26 +29,23 @@
 }
 
 .pagination__button--first,
-.pagination__button--prev {
-    border: 2px solid var(--color-dark-disabled);
-}
-
-.pagination__button--first:disabled,
-.pagination__button--prev:disabled {
-    cursor: default;
-    pointer-events: none;
-}
-
+.pagination__button--prev,
 .pagination__button--next,
 .pagination__button--last {
     border: 2px solid var(--color-primary);
 }
 
-.pagination__button--next:not(:disabled):hover,
-.pagination__button--last:not(:disabled):hover {
-    background-color: var(--color-primary);
+@media (hover: hover) and (pointer: fine) {
+    .pagination__button--first:not(:disabled):hover,
+    .pagination__button--prev:not(:disabled):hover,
+    .pagination__button--next:not(:disabled):hover,
+    .pagination__button--last:not(:disabled):hover {
+        background-color: var(--color-primary);
+    }
 }
 
+.pagination__button--first:disabled,
+.pagination__button--prev:disabled,
 .pagination__button--next:disabled,
 .pagination__button--last:disabled {
     border-color: var(--color-dark-disabled);

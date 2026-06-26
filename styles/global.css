@@ -20,6 +20,16 @@ body {
     color: var(--color-dark);
 }
 
+html.page--no-scroll {
+    overflow: hidden;
+}
+
+body.page--no-scroll {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -76,17 +86,19 @@ img {
     background-color: var(--color-primary);
 }
 
-.button--primary:hover {
-    background-color: var(--color-primary-light);
-}
-
 .button--secondary {
     border: 2px solid var(--color-primary);
     background-color: transparent;
 }
-  
-.button--secondary:hover {
-    background-color: var(--color-primary);
+
+@media (hover: hover) and (pointer: fine) {
+    .button--primary:hover {
+        background-color: var(--color-primary-light);
+    }
+
+    .button--secondary:hover {
+        background-color: var(--color-primary);
+    }
 }
 
 .container {
@@ -131,17 +143,19 @@ img {
     overflow: hidden;
     border-radius: 9px;
     background-color: var(--color-white);
+    cursor: pointer;
     transition: box-shadow var(--transition-base);
 }
 
 .card:hover {
-    cursor: pointer;
     box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
-.card:hover .card__button {
-    background-color: var(--color-primary-light);
-    border-color: transparent;
+@media (hover: hover) and (pointer: fine) {
+    .card:hover .card__button {
+        background-color: var(--color-primary-light);
+        border-color: transparent;
+    }
 }
 
 .card__image {

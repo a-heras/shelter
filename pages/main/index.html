@@ -24,12 +24,12 @@
                 <header class="header header--main">
                     <div class="container header__container">
                         <a href="./index.html" class="header__logo">
-                            <!--<img class="header__logo-icon"
+                            <img class="header__logo-icon"
                                 src="../../assets/icons/logo.svg"
                                 alt=""
                                 width="59"
                                 height="33"
-                            /> -->
+                            />
                             <div class="header__logo-text">
                                 <p class="header__logo-title">Cozy House</p>
                                 <p class="header__logo-subtitle">Shelter for pets in Boston</p>
@@ -103,46 +103,11 @@
                 <div class="container our-friends__container">
                     <h2 class="our-friends__title">Our friends who<br />are looking for a house</h2>
                     <div class="slider">
-                        <div class="slider__track">
-                            <article class="card">
-                                <img
-                                    class="card__image"
-                                    src="../../assets/images/katrine.png"
-                                    alt="Katrine"
-                                    width="270"
-                                    height="270"
-                                />
-                                <h3 class="card__title">Katrine</h3>
-                                <button class="card__button button button--secondary" type="button">Learn more</button>
-                            </article>
-              
-                            <article class="card">
-                              <img
-                                class="card__image"
-                                src="../../assets/images/jennifer.png"
-                                alt="Jennifer"
-                                width="270"
-                                height="270"
-                              />
-                              <h3 class="card__title">Jennifer</h3>
-                              <button class="card__button button button--secondary" type="button">Learn more</button>
-                            </article>
-              
-                            <article class="card">
-                              <img
-                                class="card__image"
-                                src="../../assets/images/woody.png"
-                                alt="Woody"
-                                width="270"
-                                height="270"
-                              />
-                              <h3 class="card__title">Woody</h3>
-                              <button class="card__button button button--secondary" type="button">Learn more</button>
-                            </article>
-                          </div>
-
+                        <div class="slider__viewport">
+                            <div class="slider__track"></div>
+                        </div>
                         <div class="slider__controls">
-                            <button class="slider__button slider__button--prev" type="button" disabled aria-label="Previous slide"></button>
+                            <button class="slider__button slider__button--prev" type="button" aria-label="Previous slide"></button>
                             <button class="slider__button slider__button--next" type="button" aria-label="Next slide"></button>
                         </div>
                     </div>
@@ -339,5 +304,6 @@
                 </div>
             </div>
         </footer>
+        <script type="module" src="../../scripts/main.js"></script>
     </body>
 </html>

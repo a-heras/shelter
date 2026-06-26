@@ -14,22 +14,44 @@
 
 .slider__button--prev {
     order: -1;
-    border: 2px solid var(--color-dark-disabled);
+    border: 2px solid var(--color-primary);
     background-image: url("../../assets/icons/left-arrow.svg");
-    cursor: default;
-    pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .slider__button--prev:hover,
+    .slider__button--next:hover {
+        background-color: var(--color-primary);
+    }
+}
+
+.slider__viewport {
+    flex: 0 0 auto;
+    width: calc(270px * 3 + 90px * 2);
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .slider__track {
     display: flex;
-    flex: 1 1 auto;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 990px;
-    min-width: 0;
-    gap: 53px;
-    margin: 0 12px;
-    overflow: hidden;
+    width: max-content;
+    transition: transform 0.5s ease;
+}
+
+.slider__slide {
+    display: flex;
+    flex-shrink: 0;
+    gap: 90px;
+    width: calc(270px * 3 + 90px * 2);
+}
+
+.slider__track--no-transition {
+    transition: none;
+}
+
+.slider__track--animating {
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .slider__button--next {
@@ -48,12 +70,12 @@
     background-position: center;
     transition: background-color var(--transition-base), border-color var(--transition-base);
 }
-  
-.slider__button--next:hover {
-    background-color: var(--color-primary);
-}
 
 .slider__track .card {
+    flex-shrink: 0;
+}
+
+.slider__slide .card {
     flex-shrink: 0;
 }
 
@@ -62,15 +84,18 @@
     padding: 0;
 }
 
-@media (max-width: 860px) {
-    .slider__track {
-        max-width: 580px;
+@media (max-width: 1279px) {
+    .slider__viewport {
+        width: calc(270px * 2 + 40px);
+    }
+
+    .slider__slide {
+        width: calc(270px * 2 + 40px);
         gap: 40px;
-        justify-content: flex-start;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
     .our-friends .slider {
         flex-direction: column;
         align-items: center;
@@ -83,9 +108,12 @@
         gap: 80px;
     }
 
-    .slider__track {
-        max-width: 270px;
-        margin: 0;
+    .slider__viewport {
+        width: 270px;
+    }
+
+    .slider__slide {
+        width: 270px;
         gap: 0;
     }
 
@@ -99,8 +127,7 @@
 }
 
 @media (max-width: 380px) {
-    .slider__track {
+    .slider__viewport {
         width: 270px;
-        max-width: 270px;
     }
 }
