@@ -8,6 +8,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: clip;
 }
 
 body {
@@ -96,6 +98,8 @@ img {
 
 @media (max-width: 768px) {
     .container {
+        width: 100vw;
+        max-width: 100vw;
         padding: 0 30px;
     }
 }

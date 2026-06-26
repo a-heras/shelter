@@ -3,7 +3,9 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 100%;
     margin: 60px 0;
+    overflow: hidden;
 }
 
 .slider__controls {
@@ -20,8 +22,11 @@
 
 .slider__track {
     display: flex;
+    flex: 1 1 auto;
     justify-content: space-between;
-    width: 990px;
+    width: 100%;
+    max-width: 990px;
+    min-width: 0;
     gap: 53px;
     margin: 0 12px;
     overflow: hidden;
@@ -90,5 +95,12 @@
 
     .our-friends {
         padding: 42px 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .slider__track {
+        width: 270px;
+        max-width: 270px;
     }
 }

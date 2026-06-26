@@ -83,11 +83,14 @@
     }
 
     .in-addition__image {
+        width: 100%;
+        max-width: 505px;
+        height: auto;
         margin-top: 60px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
     .in-addition {
         padding: 42px 0;
     }

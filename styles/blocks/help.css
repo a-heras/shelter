@@ -1,5 +1,5 @@
 .help {
-    padding: 100px 0;
+    padding: 80px 0 100px;
     background-color: var(--color-white);
 }
 
@@ -100,7 +100,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
     .help {
         padding: 42px 0;
     }

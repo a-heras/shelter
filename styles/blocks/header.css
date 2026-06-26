@@ -58,7 +58,8 @@
 }
 
 .header__nav {
-    max-width: 447px;
+    width: 443px;
+    flex-shrink: 0;
 }
 
 .header__burger {
@@ -84,7 +85,7 @@
 .header__list {
     display: flex;
     justify-content: space-between;
-    gap: 36px;
+    width: 100%;
 }
 
 .header__link {
@@ -142,9 +143,17 @@
     .header__burger {
         display: flex;
     }
+
+    .header__logo {
+        min-width: 0;
+    }
+
+    .header__logo-text {
+        min-width: 0;
+    }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
     .header__container {
         padding: 0 20px;
     }

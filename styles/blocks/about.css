@@ -47,13 +47,13 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
     .about__container {
         gap: 40px;
     }
 
     .about {
-        padding-top: 43px;
+        padding-top: 42px;
         padding-bottom: 42px;
     }
 
