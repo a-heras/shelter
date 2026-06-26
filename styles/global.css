@@ -20,6 +20,16 @@ body {
     color: var(--color-dark);
 }
 
+html.page--no-scroll {
+    overflow: hidden;
+}
+
+body.page--no-scroll {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
 a {
     color: inherit;
     text-decoration: none;
