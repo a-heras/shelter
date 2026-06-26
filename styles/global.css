@@ -143,11 +143,11 @@ img {
     overflow: hidden;
     border-radius: 9px;
     background-color: var(--color-white);
+    cursor: pointer;
     transition: box-shadow var(--transition-base);
 }
 
 .card:hover {
-    cursor: pointer;
     box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 

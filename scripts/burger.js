@@ -29,10 +29,14 @@ export function initBurgerMenu() {
     };
 
     const unlockScroll = () => {
+        const scrollBehavior = document.documentElement.style.scrollBehavior;
+
         document.documentElement.classList.remove('page--no-scroll');
         document.body.classList.remove('page--no-scroll');
         document.body.style.top = '';
+        document.documentElement.style.scrollBehavior = 'auto';
         window.scrollTo(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = scrollBehavior;
     };
 
     const closeMenu = (instant = false) => {

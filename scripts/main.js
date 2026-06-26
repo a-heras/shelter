@@ -1,5 +1,6 @@
 import { getPets } from './api.js';
 import { initBurgerMenu } from './burger.js';
+import { initPetPopup } from './popup.js';
 import { PetsSlider } from './slider.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -9,6 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         const pets = await getPets();
+
+        initPetPopup(pets);
 
         new PetsSlider({
             slider,
