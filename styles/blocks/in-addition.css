@@ -1,0 +1,133 @@
+.in-addition {
+    padding: 80px 0 100px;
+    background-color: var(--color-background);
+}
+
+.in-addition__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 915px;
+    padding: 0;
+}
+
+.in-addition__image {
+    width: 505px;
+    height: 261px;
+    object-fit: contain;
+}
+
+.in-addition__content {
+    max-width: 380px;
+}
+
+.in-addition__title {
+    max-width: 300px;
+}
+
+.in-addition__subtitle {
+    margin: 20px 0;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    color: var(--color-dark);
+}
+
+.in-addition__credit-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 349px;
+    height: 43px;
+    padding: 10px 15px;
+    border-radius: 9px;
+    background-color: var(--color-primary);
+    transition: background-color var(--transition-base);
+}
+
+.in-addition__credit-card:hover {
+    background-color: var(--color-primary-light);
+}
+
+.in-addition__credit-card-number {
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    color: var(--color-dark);
+}
+
+.in-addition__credit-card-icon {
+    order: -1;
+    width: 30px;
+    height: 23px;
+}
+
+.in-addition__text {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+    color: var(--color-dark-muted);
+}
+
+@media (max-width: 900px) {
+    .in-addition__container {
+        flex-direction: column;
+    }
+
+    .in-addition__content {
+        order: -1;
+    }
+
+    .in-addition__image {
+        width: 100%;
+        max-width: 505px;
+        height: auto;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .in-addition {
+        padding: 42px 0;
+    }
+
+    .in-addition__content {
+        text-align: center;
+    }
+
+    .in-addition__title {
+        max-width: 225px;
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .in-addition__subtitle {
+        margin-top: 22px;
+        letter-spacing: 0;
+    }
+
+    .in-addition__credit-card {
+        width: 280px;
+        margin: 25px auto 20px;
+    }
+
+    .in-addition__credit-card-number {
+        font-size: 15px;
+    }
+
+    .in-addition__text {
+        margin: 0 20px;
+        text-align: justify;
+    }
+
+    .in-addition__image {
+        width: 260px;
+        height: auto;
+        margin-top: 42px;
+    }
+}
